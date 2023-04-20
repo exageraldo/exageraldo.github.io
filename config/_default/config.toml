@@ -1,39 +1,43 @@
+# Configuration
+# https://gohugo.io/getting-started/configuration/#all-configuration-settings
+
 paginate = 5
 enableInlineShortcodes = true
 enableRobotsTXT = true
 enableEmoji = true
 pygmentsUseClasses = true
-defaultContentLanguage = 'pt-br'
+defaultContentLanguage = 'pt'
 
-# Hugo Modules
+## Hugo Modules
 module.imports = [
 	{ path = 'github.com/adityatelange/hugo-PaperMod' },
 ]
 
+## Outputs
 outputs.home = [
 	'HTML',
 	'RSS',
 	'JSON',
 ]
 
-[minify]
-disableXML = true
+## Minify
+minify.disableXML = true
 
-[markup]
-goldmark.renderer.unsafe = true
-highlight.noClasses = false
+## Markup
+markup.goldmark.renderer.unsafe = true
+markup.highlight.noClasses = false
 
-[privacy]
-vimeo.disabled = false
-vimeo.simple = true
-twitter.disabled = false
-twitter.enableDNT = true
-twitter.simple = true
-instagram.disabled = false
-instagram.simple = true
-youtube.disabled = false
-youtube.privacyEnhanced = true
+## Privacy
+privacy.vimeo.disabled = false
+privacy.vimeo.simple = true
+privacy.twitter.disabled = false
+privacy.twitter.enableDNT = true
+privacy.twitter.simple = true
+privacy.instagram.disabled = false
+privacy.instagram.simple = true
+privacy.youtube.disabled = false
+privacy.youtube.privacyEnhanced = true
 
-[services]
-instagram.disableInlineCSS = true
-twitter.disableInlineCSS = true
+## Services
+services.instagram.disableInlineCSS = true
+services.twitter.disableInlineCSS = true

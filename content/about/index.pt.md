@@ -4,7 +4,7 @@ summary = 'sobre'
 slug = 'about'
 aliases = [
     '/sobre',
-    '/pt-br/sobre',
+    '/pt/sobre',
 ]
 showToc = false
 showReadingTime = false

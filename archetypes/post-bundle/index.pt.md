@@ -8,6 +8,6 @@ author = ''
 tags = ['algumas', 'tags', 'aqui']
 categories = ['algumas', 'categorias', 'aqui']
 slug = '{{ .Name }}'
-aliases = ['/pt-br/{{ .Name }}']
+aliases = ['/pt/{{ .Name }}']
 draft = true
 +++

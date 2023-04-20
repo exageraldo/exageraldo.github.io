@@ -8,8 +8,8 @@ tags = ['algumas', 'tags', 'aqui']
 categories = ['algumas', 'categorias', 'aqui']
 slug = '2023-04-19'
 aliases = [
-    '/pt-br/2023-04-19',
-    '/pt-br/um-blog-pra-chamar-de-meu',
+    '/pt/2023-04-19',
+    '/pt/um-blog-pra-chamar-de-meu',
     '/um-blog-pra-chamar-de-meu',
 ]
 draft = true
