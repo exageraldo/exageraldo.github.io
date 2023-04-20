@@ -1,0 +1,4 @@
+# Content build
+buildDrafts = false
+buildFuture = false
+buildExpired = false

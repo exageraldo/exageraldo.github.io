@@ -1,0 +1,45 @@
+# Internationalization
+[pt-br] # Portuguese
+languageName = 'pt-br'
+languageAltTitle = 'Brazilian Portuguese'
+title = 'exagerismo'
+weight = 1
+taxonomies.category = 'categorias'
+taxonomies.tag = 'tags'
+taxonomies.series = 'séries'
+menu.main = [
+	{ name = 'Sobre', url = 'about/', weight = 10 },
+	{ name = 'Busca', url = 'search/', weight = 10 },
+]
+
+# Params
+params.description = 'Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod'
+params.homeInfoParams.Title = 'Geraldo Castro'
+params.homeInfoParams.Content = '''
+[pt-br] Welcome to demo of hugo's theme PaperMod.
+- **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+- Do give a 🌟 on Github !
+- PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+'''
+
+[en] # English
+languageName = 'en'
+languageAltTitle = 'English'
+title = "Geraldo's blog"
+weight = 1
+taxonomies.category = 'categories'
+taxonomies.tag = 'tags'
+taxonomies.series = 'series'
+menu.main = [
+	{ name = 'About', url = 'about/', weight = 10 },
+	{ name = 'Search', url = 'search/', weight = 10 },
+]
+# Params
+params.description = 'Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod'
+params.homeInfoParams.Title = 'Geraldo Castro'
+params.homeInfoParams.Content = '''
+Welcome to demo of hugo's theme PaperMod.
+- **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+- Do give a 🌟 on Github !
+- PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+'''

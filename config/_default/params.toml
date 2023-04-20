@@ -1,0 +1,30 @@
+# https://gohugo.io/variables/site/#the-siteparams-variable
+# https://github.com/adityatelange/hugo-PaperMod/wiki/Variables
+
+author = 'Geraldo Castro'
+defaultTheme = 'auto'
+ShowShareButtons = false
+ShowReadingTime = true
+displayFullLangName = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = true
+ShowToc = true
+socialIcons = [
+	{ name = 'github', url = 'https://github.com/exageraldo/' },
+	{ name = 'linkedin', url = 'https://linkedin.com/in/exageraldo/' },
+	{ name = 'email', url = 'mailto:dev@exageraldo.me' },
+]
+
+# [editPost]
+# URL = 'https://github.com/exageraldo/blog/tree/'
+# Text = 'Suggest Changes'
+# appendFilePath = true
+
+[assets]
+favicon = ''
+disableHLJS = true # disable Highlight.js loading
+
+[profileMode]
+enabled = false

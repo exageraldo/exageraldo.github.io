@@ -1,0 +1,40 @@
+paginate = 5
+enableInlineShortcodes = true
+enableRobotsTXT = true
+canonifyURLs = true
+enableEmoji = true
+pygmentsUseClasses = true
+defaultContentLanguage = 'pt-br'
+
+# Hugo Modules
+module.imports = [
+	{ path = 'github.com/adityatelange/hugo-PaperMod' },
+]
+
+outputs.home = [
+	'HTML',
+	'RSS',
+	'JSON',
+]
+
+[minify]
+disableXML = true
+
+[markup]
+goldmark.renderer.unsafe = true
+highlight.noClasses = false
+
+[privacy]
+vimeo.disabled = false
+vimeo.simple = true
+twitter.disabled = false
+twitter.enableDNT = true
+twitter.simple = true
+instagram.disabled = false
+instagram.simple = true
+youtube.disabled = false
+youtube.privacyEnhanced = true
+
+[services]
+instagram.disableInlineCSS = true
+twitter.disableInlineCSS = true
