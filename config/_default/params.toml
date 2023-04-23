@@ -17,6 +17,7 @@ socialIcons = [
 	{ name = 'linkedin', url = 'https://linkedin.com/in/exageraldo/' },
 	{ name = 'email', url = 'mailto:dev@exageraldo.me' },
 ]
+# disableRenderMDNotice = false
 
 # [editPost]
 # URL = 'https://github.com/exageraldo/blog/tree/'
@@ -25,7 +26,7 @@ socialIcons = [
 
 [assets]
 favicon = ''
-disableHLJS = true # disable Highlight.js loading
+disableHLJS = false # disable Highlight.js loading
 
 [profileMode]
 enabled = false

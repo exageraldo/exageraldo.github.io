@@ -1,20 +1,17 @@
 +++
-date = '{{ .Date }}'
-lastmod = '{{ .Date }}'
+date = '2023-04-20T19:04:18-03:00'
+lastmod = '2023-04-20T19:04:18-03:00'
 title = 'New post title'
 description = 'This description goes below the title'
 summary = 'Some summary to go on the thumbnail or view card'
 author = 'Geraldo Castro'
 tags = []
 categories = []
-slug = '{{ .Name }}-{{ substr (.Name | base64Encode) 0 5 }}'
+slug = '01-restsmsgateway-MDEtc'
 aliases = [
-    '/en/{{ .Name }}',
+    '/en/01-restsmsgateway',
+    '/en/01-restsmsgateway-MDEtc',
 ]
-
-# Remove these parameters when publishing
-# or change everything to 'false'
 draft = true
 hiddenInHomeList = true
-searchHidden = true
 +++

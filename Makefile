@@ -1,9 +1,9 @@
-DEFAULT_NAME=$(shell date +"%Y-%m-%d")
+POST_NAME=$(shell date +"%Y-%m-%d")
 
 # Aliases
 PHONY: new.post
 new.post:
-	hugo new --kind post-bundle posts/$(DEFAULT_NAME)
+	hugo new --kind post-bundle posts/$(POST_NAME)
 
 # Production
 PHONY: server.prod

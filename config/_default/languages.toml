@@ -21,14 +21,19 @@ menu.main = [
 ]
 
 ### Params
-params.description = 'exagerismo - Um blog cheio de brisas e ideias incompletas'
+params.description = 'exagerismo - um blog cheio de brisas e ideias incompletas'
 params.homeInfoParams.Title = 'Geraldo Castro'
 params.homeInfoParams.Content = '''
-[pt] Welcome to demo of hugo's theme PaperMod.
-- **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-- Do give a 🌟 on Github !
-- PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+Um blog cheio de brisas e ideias incompletas.
+- Aqui é o canto onde eu <s>despejo</s> escrevo algumas coisas que passam na minha cabeça.
+- Tudo que escrevo é baseado nas minhas opiniões, vivencias e experiencias.
+- Gosto de conversar sobre assuntos como <b>Python</b>, <b>Go</b>, <b>linguagens de programação</b>,
+<b>comunidades</b>, <b>música</b>, <b>TDAH</b>, <b>desenhos animados</b>.
 '''
+
+# - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+# - Do give a 🌟 on Github !
+# - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
 
 ## English
 [en]
@@ -52,8 +57,9 @@ menu.main = [
 params.description = 'exagerismo - a blog full of daydreams and incomplete ideas'
 params.homeInfoParams.Title = 'Geraldo Castro'
 params.homeInfoParams.Content = '''
-Welcome to demo of hugo's theme PaperMod.
-- **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-- Do give a 🌟 on Github !
-- PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+A blog full of daydreams and incomplete ideas.
+- Here is the space where I <s>dump</s> write some things that go through my head.
+- Everything that I write is based on my own opinions, living and experiences.
+- I like to talk about themes like <b>Python</b>, <b>Go</b>, <b>programming languages</b>,
+<b>communities</b>, <b>music</b>, <b>ADHD</b>, <b>cartoons</b>.
 '''

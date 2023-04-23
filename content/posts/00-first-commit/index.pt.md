@@ -3,9 +3,13 @@ date = '2023-04-19T12:51:48-03:00'
 title = 'Um blog pra chamar de meu'
 summary = 'Razões pelas quais decidi criar um blog para escrever minhas ideias incompletas.'
 description = 'Alguma descrição'
-author = ''
-tags = ['algumas', 'tags', 'aqui']
-categories = ['algumas', 'categorias', 'aqui']
+author = 'Geraldo Castro'
+tags = [
+    'rascunho',
+]
+categories = [
+    'rascunho',
+]
 slug = '2023-04-19'
 aliases = [
     '/pt/2023-04-19',
@@ -13,6 +17,7 @@ aliases = [
     '/um-blog-pra-chamar-de-meu',
 ]
 draft = true
+hiddenInHomeList = true
 +++
 
 # asdasdasd
