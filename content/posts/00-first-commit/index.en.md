@@ -4,12 +4,8 @@ title = 'A blog to call my own'
 summary = 'Reasons why I decided to create a blog to write down my incomplete ideas.'
 description = 'Some description'
 author = 'Geraldo Castro'
-tags = [
-    'draft',
-]
-categories = [
-    'draft',
-]
+tags = []
+categories = []
 slug = '2023-04-19'
 aliases = [
     '/en/2023-04-19',
@@ -18,6 +14,7 @@ aliases = [
 ]
 draft = true
 hiddenInHomeList = true
+hiddenPage = true
 +++
 
 # asdasdasd

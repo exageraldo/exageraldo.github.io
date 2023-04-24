@@ -18,6 +18,7 @@ aliases = [
 ]
 draft = true
 # hiddenInHomeList = true
+# hiddenPage = true
 
 topAlerts = [
     # { type = 'tip', content = 'This is another alert box.' },

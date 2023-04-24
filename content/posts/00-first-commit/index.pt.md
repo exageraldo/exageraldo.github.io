@@ -4,12 +4,8 @@ title = 'Um blog pra chamar de meu'
 summary = 'Razões pelas quais decidi criar um blog para escrever minhas ideias incompletas.'
 description = 'Alguma descrição'
 author = 'Geraldo Castro'
-tags = [
-    'rascunho',
-]
-categories = [
-    'rascunho',
-]
+tags = []
+categories = []
 slug = '2023-04-19'
 aliases = [
     '/pt/2023-04-19',
@@ -18,6 +14,7 @@ aliases = [
 ]
 draft = true
 hiddenInHomeList = true
+hiddenPage = true
 +++
 
 # asdasdasd
