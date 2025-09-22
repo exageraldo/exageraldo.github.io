@@ -1,12 +1,13 @@
 # Configuration
 # https://gohugo.io/getting-started/configuration/#all-configuration-settings
 
-paginate = 5
 enableInlineShortcodes = true
 enableRobotsTXT = true
 enableEmoji = true
 pygmentsUseClasses = true
 defaultContentLanguage = 'pt'
+
+pagination.pagerSize = 5
 
 ## Hugo Modules
 module.imports = [
@@ -30,9 +31,9 @@ markup.highlight.noClasses = false
 ## Privacy
 privacy.vimeo.disabled = false
 privacy.vimeo.simple = true
-privacy.twitter.disabled = false
-privacy.twitter.enableDNT = true
-privacy.twitter.simple = true
+privacy.x.disabled = false
+privacy.x.enableDNT = true
+privacy.x.simple = true
 privacy.instagram.disabled = false
 privacy.instagram.simple = true
 privacy.youtube.disabled = false
@@ -40,4 +41,4 @@ privacy.youtube.privacyEnhanced = true
 
 ## Services
 services.instagram.disableInlineCSS = true
-services.twitter.disableInlineCSS = true
+services.x.disableInlineCSS = true
