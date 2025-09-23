@@ -1,4 +1,4 @@
 # Content build
-buildDrafts = false
+buildDrafts = true
 buildFuture = false
 buildExpired = false
