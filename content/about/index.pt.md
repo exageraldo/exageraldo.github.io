@@ -1,10 +1,11 @@
 +++
 title = 'Sobre'
 summary = 'sobre'
-slug = 'about'
+slug = 'sobre'
 aliases = [
     '/sobre',
     '/pt/sobre',
+    '/pt/about',
 ]
 showToc = false
 showReadingTime = false

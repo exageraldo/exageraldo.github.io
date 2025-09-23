@@ -3,8 +3,9 @@ title = 'About'
 summary = 'about'
 slug = 'about'
 aliases = [
-    'about',
+    '/about',
     '/en/about',
+    '/en/sobre',
 ]
 showToc = false
 showReadingTime = false

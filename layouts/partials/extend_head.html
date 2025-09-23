@@ -1,0 +1,18 @@
+{{/*<!-- JS --> */}}
+{{ $indexJS := resources.Get "js/index.js" | js.Build | resources.Minify | resources.Fingerprint "sha512" }}
+<script
+  type="text/javascript"
+  src="{{ $indexJS.RelPermalink }}"
+  integrity="{{ $indexJS.Data.Integrity }}"
+  type="module"
+  defer
+></script>
+
+{{/*<!-- CSS --> */}}
+{{ $opts := dict "transpiler" "libsass" "targetPath" "css/main.css" }}
+{{ $mainCSS := resources.Get "css/main.scss" | toCSS $opts | minify | fingerprint }}
+<link
+  rel="stylesheet"
+  href="{{ $mainCSS.RelPermalink }}"
+  integrity="{{ $mainCSS.Data.Integrity }}"
+/>

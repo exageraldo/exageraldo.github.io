@@ -1,0 +1,43 @@
+{{/*<!--
+
+  References:
+    - https://github.com/martignoni/hugo-notice/
+--> */}}
+{{ .Page.Scratch.Add "alert-counter" 1 }}
+
+{{/*<!-- Available alert types: warning, info, note, tip --> */}}
+{{ $alertType := .Get "type" | default "note" }}
+{{ $alertTitle := (.Get "title") | default (i18n $alertType) }}
+{{ $isOpen := (.Get "open") | default true }}
+{{ $isBlocked := (.Get "blocked") | default false }}
+{{ $componentID := .Get "id" | default (printf "alert-%s-%d" (.Page.RelPermalink) (.Page.Scratch.Get "alert-counter") ) | anchorize }}
+
+{{/*<!-- Workaround markdownify inconsistency for single/multiple paragraphs --> */}}
+{{ $raw := (markdownify .Inner | chomp) }}
+{{ $block := findRE "(?is)^<(?:address|article|aside|blockquote|canvas|dd|div|dl|dt|fieldset|figcaption|figure|footer|form|h(?:1|2|3|4|5|6)|header|hgroup|hr|li|main|nav|noscript|ol|output|p|pre|section|table|tfoot|ul|video)\\b" $raw 1 }}
+
+{{ $icons := dict "warning" "⚠" "info" "ⓘ" "note" "✎" "tip" "⚡︎" }}
+
+<div
+  id="{{ $componentID }}"
+  class="alert {{ $alertType }}"
+  x-data="{ expanded: {{ if not $isBlocked }} {{ $isOpen }} {{ else }}true{{ end }} }"
+>
+  <p
+    class="alert-title {{ if $isBlocked }}blocked{{ end }}"
+    {{- if not $isBlocked }}@click.prevent="expanded = ! expanded"{{ end -}}
+  >
+    <span class="icon">{{ index $icons $alertType }}</span>
+    <span class="text">{{ $alertTitle }}</span>
+    {{- if not $isBlocked -}}
+    <span class="expand" x-cloak x-show="!expanded">⊕</span>
+    <span class="expand" x-cloak x-show="expanded">⊖</span>
+    {{- else -}}
+    <span class="expand"></span>
+    {{- end -}}
+  </p>
+  <div class="alert-content" x-cloak x-show="expanded" x-collapse>
+    {{- if or $block (not $raw) }}{{ $raw }}{{ else }}<p>{{ $raw }}</p>{{ end -}}
+  </div>
+</div>
+

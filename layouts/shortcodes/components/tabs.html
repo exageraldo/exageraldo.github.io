@@ -1,0 +1,61 @@
+{{/*<!--
+
+  References:
+    - https://dongheenam.info/posts/tabs-in-hugo/
+    - https://github.com/solo-io/hugo-theme-soloio/blob/master/layouts/shortcodes/tabs.html
+--> */}}
+ 
+{{ .Page.Scratch.Add "tabset-counter" 1 }}
+
+{{ $name := .Get "name" }}
+{{ $componentID := .Get "id" | default (printf "tabset-%s-%d" (.Page.RelPermalink) (.Page.Scratch.Get "tabset-counter") ) | anchorize }}
+{{ $title := .Get "title" | default "" }}
+
+{{ $tabs := .Scratch.Get "tabs" }}
+
+{{ if .Inner }}
+  {{/*<!-- We don't use the inner content, but Hugo will complain if we don't reference it. --> */}}
+{{ end }}
+
+{{/*<!-- Tabs Component --> */}}
+<div
+  id="{{ $componentID }}"
+  x-data="{ activeTab: '{{ printf "%s-%d" $componentID 0 }}' }"
+  class="tabs-container"
+>
+{{/*<!-- Navbar --> */}}
+  <div class="tabs-navbar">
+  {{/*<!-- Title --> */}}
+  {{- if $title -}}
+  <span class="tabs-title">
+    <i>{{- $title -}}</i>
+  </span>
+  {{- end -}}
+
+  <div class="tabs-buttons">
+    {{ range $idx, $t := $tabs }}
+    {{ $tabID := printf "%s-%d" $componentID $idx }}
+    <button
+      :class="{ 'tab-button': true, 'active': activeTab === '{{ $tabID }}' }"
+      @click.prevent="activeTab = '{{ $tabID }}'"
+    >{{ .name }}</button>
+    {{ end }} {{/*<!--  --> */}}
+  </div>
+  </div>{{/*<!-- /Navbar --> */}}
+
+  {{/*<!-- Tab Content --> */}}
+  <div class="tabs-body">
+    {{ range $idx, $t := $tabs }}
+    {{ $tabID := printf "%s-%d" $componentID $idx }}
+    <template x-if="activeTab === '{{ $tabID }}'">
+      <div
+        id="{{ $tabID }}"
+        class="tab-content {{ if $title }} tab-content-rounded {{ end }}"
+        x-cloak
+      >
+        {{ .content | markdownify }}
+      </div>
+    </template>
+    {{ end }} {{/*<!--  --> */}}
+  </div>{{/*<!-- /Tab Content --> */}}
+</div>{{/*<!-- /Tabs Component --> */}}

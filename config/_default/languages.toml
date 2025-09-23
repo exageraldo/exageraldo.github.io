@@ -16,8 +16,8 @@ taxonomies.series = 'series'
 
 ### Menu
 menu.main = [
-	{ name = 'Sobre', url = 'about/', weight = 10 },
-	{ name = 'Busca', url = 'search/', weight = 10 },
+	{ name = 'Sobre', url = 'sobre/', weight = 20 },
+	{ name = 'Busca', url = 'busca/', weight = 10 },
 ]
 
 ### Params
@@ -44,7 +44,7 @@ taxonomies.series = 'series'
 
 ### Menu
 menu.main = [
-	{ name = 'About', url = 'about/', weight = 10 },
+	{ name = 'About', url = 'about/', weight = 20 },
 	{ name = 'Search', url = 'search/', weight = 10 },
 ]
 
