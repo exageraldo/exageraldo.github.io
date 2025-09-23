@@ -12,6 +12,11 @@ aliases = [
     '/caso-de-teste-dramatiq',
 ]
 draft = true
+
+[build]
+  list = 'never'
+  publishResources = true
+  render = 'always'
 +++
 
 ## Dramatiq

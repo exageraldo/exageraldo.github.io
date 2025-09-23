@@ -10,4 +10,10 @@ categories = ['some', 'categories', 'here']
 slug = '{{ .Name }}'
 aliases = ['/en/{{ .Name }}']
 draft = true
+
+# https://gohugo.io/content-management/build-options/
+[build]
+  list = 'never'
+  publishResources = true
+  render = 'always'
 +++
