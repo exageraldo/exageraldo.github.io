@@ -3,6 +3,18 @@ p {
   text-justify: inter-word;
 }
 
+table.lntable {
+  code {
+    border-radius: 0 !important;
+  }
+  td.lntd:first-child {
+    position: sticky;
+    left: 0;
+    background-color: var(--theme);
+    z-index: 1;
+  }
+}
+
 table:not(.lntable) {
   display: block;
   max-width: fit-content;

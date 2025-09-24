@@ -24,7 +24,7 @@ draft = true
 Dramatiq é uma biblioteca Python que fornece uma estrutura simples e confiável para a criação de filas de tarefas assíncronas e distribuídas e sistemas de processamento de tarefas em segundo plano. Ela funciona enviando mensagens para um broker de mensagens como `RabbitMQ` ou `Redis`, que então distribui essas tarefas para processos de trabalho que executam as tarefas em segundo plano. Os principais recursos incluem uma API direta, suporte para trabalhadores baseados em threads para maior eficiência, reconhecimento automático de mensagens para maior confiabilidade e a capacidade de definir tarefas como “atores” para execução assíncrona, semelhante a linguagens como Elixir e Akka. 
 
 Exemplo de uso copiado da documentação:
-```python
+```python {linenos=table}
 import dramatiq
 import requests
 
@@ -169,7 +169,7 @@ https://12factor.net/pt_br/config
 {{< components/tabs>}}
 {{< components/tab name="tasks.py" >}}
 Exemplo de uso copiado da documentação:
-```python
+```python {linenos=table}
 import dramatiq
 import requests
 
