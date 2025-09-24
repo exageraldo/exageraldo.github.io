@@ -48,6 +48,9 @@ count_words.send("http://example.com")
 
 {{< components/tabs title="Atualizado em">}}
 {{< components/tab name="2019" >}}
+
+<div class="fixed-table"></div>
+
 |                                     | Dramatiq | Celery | Huey   | RQ  |
 |-------------------------------------|:--------:|:------:|:------:|:---:|
 | Suporte ao Python 2                 | ❌        | ✅     | ✅     | ✅  |
@@ -81,6 +84,9 @@ Esta tabela [apresentada pela documentação](https://dramatiq.io/motivation.htm
 
 
 {{< components/tab name="2025" >}}
+
+<div class="fixed-table"></div>
+
 |                                     | Dramatiq | Celery | Huey   | RQ     |
 |-------------------------------------|:--------:|:------:|:------:|:------:|
 | **Suporte ao Python 2**             | ❌        | ❌ [^1]| ✅     | ❌ [^2]|

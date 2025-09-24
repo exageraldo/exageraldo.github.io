@@ -1,19 +1,23 @@
-table:not(.lntable){
-  display: table;
-  width: 100%;
-
-  tbody {
-    tr {
-      &:hover {
-        background-color: var(--tertiary);
-      }
-    }
-  }
-}
-
 p {
   text-align: justify;
   text-justify: inter-word;
+}
+
+table:not(.lntable) {
+  display: block;
+  max-width: fit-content;
+  margin: 0 auto;
+  overflow-x: auto;
+
+  div.fixed-table + & {
+    th:first-child,
+    td:first-child {
+      position: sticky;
+      left: 0;
+      background-color: var(--theme);
+      z-index: 1;
+    }
+  }
 }
 
 .tabs-container {
@@ -172,8 +176,4 @@ body.dark .alert {
       --title-background-color: #800;
       --content-background-color: #400;
   }
-}
-
-.display-none {
-    display: none;
 }
