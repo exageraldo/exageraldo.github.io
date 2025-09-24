@@ -1,0 +1,65 @@
+.tabs-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  .tabs-navbar {
+    display: flex;
+    justify-content: flex-start;
+
+    .tabs-title {
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    .tabs-buttons {      
+      .tab-button {
+        display: inline-block;
+        padding: 5px 20px;
+        cursor: pointer;
+        border: 1px solid var(--secondary);
+        border-bottom: none;
+        transition: background-color 0.3s ease;
+
+        &:first-child {
+          border-radius: 5px 0 0 0;
+        }
+
+        &:last-child {
+          border-radius: 0 5px 0 0;
+        }
+
+        &:only-child {
+          border-radius: 5px 5px 0 0;
+        }
+        
+        &:not(:last-child) {
+          margin-right: -6px;
+        }
+
+        &:hover {
+          background-color: var(--secondary);
+        }
+
+        &.active {
+          background-color: var(--tertiary);
+
+          &:hover {
+            background-color: var(--secondary);
+          }
+        }
+      }
+    }
+  }
+
+  .tabs-body {
+    .tab-content {
+      padding: 10px;
+      border: 1px solid var(--secondary);
+      border-radius: 0 5px 5px 5px;
+    }
+    .tab-content-rounded {
+      border-radius: 5px;
+    }
+  }
+}
